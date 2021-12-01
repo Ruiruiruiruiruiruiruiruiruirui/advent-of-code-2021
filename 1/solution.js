@@ -1,8 +1,10 @@
 // const input = require('./input.txt');
 const fs = require('fs');
+const path = require('path');
 
 const part1 = () => {
-  const data = fs.readFileSync('C:\\Users\\A0810516\\OneDrive - Aon\\Desktop\\aoc2021\\advent-of-code-2021\\1\\input.txt', 'utf8').split('\n');
+  const inputPath = path.join(__dirname, 'input.txt');
+  const data = fs.readFileSync(inputPath, 'utf8').split('\n');
 
   const sanitised = data.map((x) => parseFloat(x));
 
@@ -20,16 +22,12 @@ const part1 = () => {
 part1();
 
 const part2 = () => {
-  const data = fs.readFileSync('C:\\Users\\A0810516\\OneDrive - Aon\\Desktop\\aoc2021\\advent-of-code-2021\\1\\input.txt', 'utf8').split('\n');
+  const inputPath = path.join(__dirname, 'input.txt');
+  const data = fs.readFileSync(inputPath, 'utf8').split('\n');
 
   const sanitised = data.map((x) => parseFloat(x));
 
   let totalIncrease = 0;
-
-  // let total = {
-  //   previousSum: 0,
-  //   nextSum: 0,
-  // }
 
   let previousSum = 0;
 
