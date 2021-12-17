@@ -1,6 +1,6 @@
-#### Ways to test your code.
+### Ways to test your code.
 
-##### Why do testing?
+#### Why do testing?
 
 Have you ever had a scenario where someone is doing up a new feature, checks in their code and breaks something elsewhere in the project? Well, testing will help mitigate that risk, so when your code hits production, there wouldn't be any glaring issues that fall through the cracks while testing.
 
@@ -17,7 +17,7 @@ The differences between these 3 ways is mostly about coverage of your architectu
 
 So now that we know the base differences between the 3 types, let's dive a little bit deeper, starting with...
 
-##### End to end testing
+#### End to end testing
 
 E2E testing is all encompassing tests that are set up to recreate real world scenarios. For example, let's say you have a login page that needs to be tested, how much tests would you have to write for that? 
 
@@ -53,7 +53,7 @@ As you can see, that is a lot of work for a simple test to see if login works, t
 
 Next on our list will be...
 
-##### Integration testing
+#### Integration testing
 
 Integration testing is like a subset of E2E testing, instead of testing the full user flow, we're testing it in smaller chunks so when the project is integrated there will be no issues. 
 
@@ -69,7 +69,7 @@ This smaller blocks of integrated code could be more easily facilitated and buil
 
 Lastly we have the smallest but arguably the most popular of the 3 types of tests...
 
-##### Unit tests
+#### Unit tests
 
 Unit testing is taking small isolated parts of your project, like utility functions or checking if UI elements are being rendered correctly.
 
